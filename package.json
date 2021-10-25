@@ -1,0 +1,22 @@
+{
+  "name": "tsc-check",
+  "version": "0.0.1",
+  "repository": "https://github.com/abraaoz/tsc-check",
+  "author": "abraao.zaidan@gmail.com",
+  "license": "MIT",
+  "private": false,
+  "bin": {
+    "tsc-check": "./scripts/tsc-check.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "spawn-args": "^0.2.0"
+  },
+  "keywords": [
+    "typescript",
+    "typescript-check"
+  ],
+  "devDependencies": {
+    "minimatch-all": "^1.1.0"
+  }
+}
