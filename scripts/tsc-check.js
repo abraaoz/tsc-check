@@ -5,7 +5,7 @@ const { runSync, readJsonFile, isDir } = require("./lib");
 
 function tscCheck() {
   const tsconfig = readJsonFile("tsconfig.json");
-  const exclude = tsconfig.exclude.map((path) =>
+  const exclude = (tsconfig.exclude || []).map((path) =>
     isDir(path) ? `${path}/**/*` : path
   );
 
