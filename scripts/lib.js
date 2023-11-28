@@ -26,7 +26,7 @@ function readJsonFile(relativePath, verbose = true) {
   if (verbose) {
     console.log(`Trying to read the file ${chalk.yellow(absolutePath)}`);
   }
-  return parse(fs.readFileSync(absolutePath), undefined, true);
+  return parse(fs.readFileSync(absolutePath, "utf8"), undefined, true);
 }
 
 function isDir(relativePath) {
