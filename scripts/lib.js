@@ -2,6 +2,7 @@ const fs = require("fs");
 const chalk = require("chalk");
 const { spawnSync } = require("child_process");
 const spawnargs = require("spawn-args");
+const { parse } = require("comment-json");
 
 function runSync(cmd, verbose = true) {
   console.log(`Running ${chalk.yellow(cmd)}`);
@@ -25,7 +26,7 @@ function readJsonFile(relativePath, verbose = true) {
   if (verbose) {
     console.log(`Trying to read the file ${chalk.yellow(absolutePath)}`);
   }
-  return JSON.parse(fs.readFileSync(absolutePath));
+  return parse(fs.readFileSync(absolutePath), undefined, true);
 }
 
 function isDir(relativePath) {

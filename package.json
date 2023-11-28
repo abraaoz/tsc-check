@@ -1,6 +1,6 @@
 {
   "name": "tsc-check",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": "https://github.com/abraaoz/tsc-check",
   "author": "abraao.zaidan@gmail.com",
   "license": "MIT",
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "chalk": "^4.1.2",
+    "comment-json": "^4.2.3",
     "minimatch-all": "^1.1.0",
     "spawn-args": "^0.2.0"
   },
